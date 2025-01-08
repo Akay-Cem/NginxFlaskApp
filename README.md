@@ -16,15 +16,12 @@ This `README.md`file describes how to deploy a simple Flask web application usin
 
 ## Steps to Run the Application
 
-### Clone this repository
+### 1. Clone this repository
 
    ```bash
    git clone https://github.com/Akay-Cem/NginxFlaskApp.git
-   cd NginxFlaskApp.git
-   ```
-
-### 1. Install Dependencies
-First, make sure the dependencies are installed in your virtual environment.
+   cd NginxFlaskApp
+    ```
 
 ### 2. Create a virtual environment
 python3 -m venv .venv
@@ -32,7 +29,7 @@ python3 -m venv .venv
 ### 3. Activate the virtual environment
 source .venv/bin/activate
 
-### 4. Install the required packages
+### 4. Install the required packages/dependencies
 pip install -r requirements.txt
 
 ### 5. Run the Flask App with Gunicorn
