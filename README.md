@@ -46,6 +46,7 @@ server {
     error_log /var/log/nginx/flaskapp_error.log;
     access_log /var/log/nginx/flaskapp_access.log;
 }
+```
 
 ### Test Nginx configuration
 sudo nginx -t
