@@ -24,17 +24,21 @@ cd NginxFlaskApp
 ```
 
 ### 2. Create a virtual environment
+```bash
 python3 -m venv .venv
-
+```
 ### 3. Activate the virtual environment
+```bash
 source .venv/bin/activate
-
+```
 ### 4. Install the required packages/dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ### 5. Run the Flask App with Gunicorn
+```bash
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
-
+```
 ## Configure Nginx
 ```nginx
 server {
@@ -55,14 +59,10 @@ server {
 ```
 
 ### Test Nginx configuration
+```bash
 sudo nginx -t
-
-### Restart Nginx
-sudo systemctl restart nginx
-
-
-
 ```
-def hello_world():
-print("Hello, World!")
+### Restart Nginx
+```bash
+sudo systemctl restart nginx
 ```
