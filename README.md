@@ -1,6 +1,6 @@
 # Flask Web App with Gunicorn and Nginx
 
-This `README.md`file describes how to deploy a simple Flask web application using Gunicorn as the WSGI server and Nginx as the reverse proxy server.
+This `README.md`file describes how to deploy a simple Flask web application using Gunicorn as the WSGI server and Nginx as the reverse proxy server. The Flask app is by no means done. This is an initial setup and I will continue to work on it when time is appropriate.. 
 
 ## Project Structure
 ```
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```bash
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
 ```
-## Configure Nginx - 
+## Configure Nginx
 ###### [Ubuntu guide](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
 ```nginx
 server {
