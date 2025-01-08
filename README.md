@@ -5,14 +5,7 @@ This project demonstrates how to deploy a simple Flask web application using Gun
 ## Project Structure
 
 The structure of the project is as follows:
-.
-├── app.py
-├── README.md
-├── requirements.txt
-├── templates
-│   ├── home.html
-│   └── index.html
-└── wsgi.py
+. ├── app.py ├── README.md ├── requirements.txt ├── templates │ ├── home.html │ └── index.html └── wsgi.py
 
 ## Steps to Run the Application
 
