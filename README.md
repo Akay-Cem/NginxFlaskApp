@@ -3,6 +3,7 @@
 This project demonstrates how to deploy a simple Flask web application using Gunicorn as the WSGI server and Nginx as the reverse proxy server.
 
 ## Project Structure
+```
 .
 ├── app.py
 ├── README.md
@@ -11,8 +12,9 @@ This project demonstrates how to deploy a simple Flask web application using Gun
 │   ├── home.html
 │   └── index.html
 └── wsgi.py
+```
 
-# Steps to Run the Application
+## Steps to Run the Application
 
 ### 1. Install Dependencies
 First, make sure the dependencies are installed in your virtual environment.
@@ -29,7 +31,7 @@ pip install -r requirements.txt
 ### 5. Run the Flask App with Gunicorn
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
 
-# Configure Nginx
+## Configure Nginx
 ```nginx
 server {
     listen 80;
