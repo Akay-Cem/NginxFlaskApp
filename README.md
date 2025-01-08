@@ -12,21 +12,21 @@ This project demonstrates how to deploy a simple Flask web application using Gun
 │   └── index.html
 └── wsgi.py
 
-## Steps to Run the Application
+# Steps to Run the Application
 
 ### 1. Install Dependencies
 First, make sure the dependencies are installed in your virtual environment.
 
-### Create a virtual environment
+### 2. Create a virtual environment
 python3 -m venv .venv
 
-### Activate the virtual environment
+### 3. Activate the virtual environment
 source .venv/bin/activate
 
-### Install the required packages
+### 4. Install the required packages
 pip install -r requirements.txt
 
-### Run the Flask App with Gunicorn
+### 5. Run the Flask App with Gunicorn
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
 
 # Configure Nginx
@@ -46,8 +46,8 @@ server {
     access_log /var/log/nginx/flaskapp_access.log;
 }
 
-## Test Nginx configuration
+### Test Nginx configuration
 sudo nginx -t
 
-## Restart Nginx
+### Restart Nginx
 sudo systemctl restart nginx
