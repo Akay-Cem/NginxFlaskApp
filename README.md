@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```bash
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
 ```
-## Configure Nginx
+## Configure Nginx - [Ubuntu guide](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
 ```nginx
 server {
     listen 80;
