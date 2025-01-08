@@ -62,7 +62,7 @@ sudo systemctl restart nginx
 
 
 
-```python
+```
 def hello_world():
 print("Hello, World!")
 ```
