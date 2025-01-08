@@ -16,6 +16,13 @@ This `README.md`file describes how to deploy a simple Flask web application usin
 
 ## Steps to Run the Application
 
+### Clone this repository
+
+   ```bash
+   git clone https://github.com/Akay-Cem/NginxFlaskApp.git
+   cd NginxFlaskApp.git
+   ```
+
 ### 1. Install Dependencies
 First, make sure the dependencies are installed in your virtual environment.
 
