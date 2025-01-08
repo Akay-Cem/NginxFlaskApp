@@ -18,10 +18,10 @@ This `README.md`file describes how to deploy a simple Flask web application usin
 
 ### 1. Clone this repository
 
-   ```bash
-   git clone https://github.com/Akay-Cem/NginxFlaskApp.git
-   cd NginxFlaskApp
-    ```
+```bash
+git clone https://github.com/Akay-Cem/NginxFlaskApp.git
+cd NginxFlaskApp
+```
 
 ### 2. Create a virtual environment
 python3 -m venv .venv
