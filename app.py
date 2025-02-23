@@ -22,6 +22,3 @@ def index():
     ratings = df.groupby(df['release_date'].dt.year)['vote_average'].mean().reset_index()
     ratings = ratings.rename(columns={'release_date': 'Year', 'vote_average': 'Rating'})
     return render_template('index.html', avg_ratings=ratings)
-
-
-

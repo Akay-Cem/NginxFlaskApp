@@ -40,7 +40,7 @@ pip install -r requirements.txt
 gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app   
 ```
 ## Configure Nginx
-###### [Ubuntu guide](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
+##### [Ubuntu guide](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
 ```nginx
 server {
     listen 80;
@@ -67,3 +67,31 @@ sudo nginx -t
 ```bash
 sudo systemctl restart nginx
 ```
+
+
+
+## Docker
+
+### Install Docker
+```bash
+sudo apt install -y docker.io
+```
+### Enable Docker
+```bash
+sudo systemctl enable docker --now
+```
+
+### Run docker without sudo
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+### Install Docker Compose and make it executable
+##### [Install Docker](https://docs.docker.com/compose/install/standalone/)
+
+```bash
+curl -SL https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+and now reboot and you're good to go.
