@@ -4,7 +4,9 @@ import pandas as pd
 app = Flask(__name__)
 
 cols_to_keep = [0,1,2,3,5,6,7,10,13,14,19,20,21,22]
-df = pd.read_csv('/home/cem/Hentet/TMDB_movie_dataset_v11.csv', nrows=1000, usecols=cols_to_keep)
+# df = pd.read_csv('TMDB_movie_dataset_v11.csv', nrows=1000, usecols=cols_to_keep) #lokalt
+df = pd.read_csv('/app/TMDB_movie_dataset_v11.csv', nrows=1000, usecols=cols_to_keep) # inde i container
+
 
 # set the max columns to none
 pd.set_option('display.max_columns', None)
